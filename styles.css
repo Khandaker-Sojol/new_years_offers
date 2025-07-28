@@ -71,6 +71,45 @@ body {
 .categories-img img {
   width: 100%;
 }
+/* Part Section */
+.party {
+  background: linear-gradient(180deg, rgb(7, 2, 17), rgba(7, 2, 17, 0) 100%),
+    url("./images/Vectorrr.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+.party-container {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 150px;
+}
+.party-info {
+}
+.party-info h1 {
+  color: rgb(255, 255, 255);
+  font-family: Merriweather;
+  font-size: 4rem;
+  font-weight: 900;
+}
+.party-info p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.party-info a {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+.party-img {
+}
+.party-img img {
+  width: 100%;
+}
 
 @media screen and (max-width: 576px) {
   body {
@@ -111,5 +150,32 @@ body {
   }
   .categories-img img {
     width: 100%;
+  }
+  /* Party responsive */
+  .party {
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    width: 100%;
+    background-position: center center;
+  }
+  .party-container {
+    padding: 20px;
+    flex-direction: column;
+  }
+  .party-info {
+    width: 100%;
+  }
+  .party-info h1 {
+    font-size: 2rem;
+  }
+  .party-info p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+  }
+  .party-info a {
+    font-size: 1rem;
+  }
+  .party-img img {
+    width: 80%;
   }
 }
