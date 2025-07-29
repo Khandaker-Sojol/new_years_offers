@@ -15,6 +15,18 @@ body {
   max-width: 1320px;
   margin: 0 auto;
 }
+.btn {
+  padding: 16px 32px;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  background: rgb(255, 0, 0);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+}
+
+/* Banner Section */
 
 .banner {
   background: linear-gradient(180deg, rgb(7, 2, 17), rgba(7, 2, 17, 0) 100%),
@@ -69,7 +81,7 @@ body {
   text-align: center;
 }
 .categories-img img {
-  width: 100%;
+  width: 70%;
 }
 /* Part Section */
 .party {
@@ -109,6 +121,77 @@ body {
 }
 .party-img img {
   width: 100%;
+}
+
+/* Join Section */
+.join {
+  margin-top: 120px;
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0) 100%
+  );
+}
+.join-info {
+  padding: 100px 385px;
+  text-align: center;
+}
+.join-info h3 {
+  color: rgb(7, 2, 17);
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+.join-title {
+  color: rgb(255, 0, 0);
+}
+.join-info button {
+}
+
+/* Upcoming Section */
+.upcoming {
+  display: flex;
+  gap: 30px;
+  margin: 40px auto;
+  align-items: center;
+}
+.upcoming-text-left {
+  flex: 1;
+}
+.upcoming-text-left h4 {
+  color: rgb(255, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.upcoming-text-left h1 {
+  color: rgb(7, 2, 17);
+  font-family: Merriweather;
+  font-size: 3rem;
+  font-weight: 900;
+}
+.upcoming-text-right p,
+.upcoming-text-left p {
+  color: rgba(7, 2, 17, 0.6);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.upcoming-img {
+  border: 15px solid red;
+  border-radius: 50%;
+  flex: 1;
+}
+.upcoming-img img {
+  padding: 30px;
+}
+.upcoming-text-right {
+  flex: 1;
+}
+.upcoming-text-right h1 {
+  color: rgb(255, 0, 0);
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {
@@ -177,5 +260,24 @@ body {
   }
   .party-img img {
     width: 80%;
+  }
+  /* Join Section */
+  .join {
+    margin-top: 60px;
+  }
+  .join-info {
+    padding: 50px;
+    text-align: center;
+  }
+  .join-info h3 {
+    font-size: 1.3rem;
+  }
+  /* Upcoming Section */
+  .upcoming {
+    flex-direction: column;
+    text-align: center;
+  }
+  .upcoming-img img {
+    width: 100%;
   }
 }
